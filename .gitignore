@@ -1,0 +1,15 @@
+# Byte-compiled files
+*.elc
+
+# Backup files
+*~
+\#*\#
+
+# Auto-save files
+.\#*
+
+# Package archives
+*.tar
+
+# Compiled native code
+*.eln
