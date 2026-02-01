@@ -112,3 +112,4 @@ Import secrets from an encrypted elisp file:
 ## License
 
 MIT
+# pass-simple
