@@ -16,7 +16,7 @@ Simple Emacs utilities for managing passwords with [pass](https://www.passwordst
 
 ```elisp
 (straight-use-package
- '(pass-simple :host github :repo "cgeng/pass-simple"))
+ '(pass-simple :host github :repo "ChristianGeng/pass-simple"))
 ```
 
 ### With Doom Emacs
@@ -25,7 +25,7 @@ In `packages.el`:
 
 ```elisp
 (package! pass-simple
-  :recipe (:host github :repo "cgeng/pass-simple"))
+  :recipe (:host github :repo "ChristianGeng/pass-simple"))
 ```
 
 ### Manual
@@ -109,7 +109,13 @@ Import secrets from an encrypted elisp file:
 | `M-x pass-simple-export-env` | Export secrets to env vars |
 | `M-x pass-simple-bulk-insert-from-file` | Bulk import from file |
 
+## Testing
+
+```bash
+make test
+make lint
+```
+
 ## License
 
 MIT
-
