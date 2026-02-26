@@ -35,6 +35,9 @@
   (require 'consult nil t)
   (require 'auth-source nil t))
 
+;; Optional function from consult used when installed.
+(declare-function consult--read "consult")
+
 ;;; Variables
 
 (defvar pass-simple--path-history nil
@@ -43,8 +46,10 @@
 (defvar pass-simple-secret-specs nil
   "Alist mapping secret names to plists with :pass and :env keys.
 Example:
-  \\='((openai :pass \"code/openai_api_key\" :env \"OPENAI_API_KEY\")
-    (anthropic :pass \"code/anthropic_key\" :env (\"ANTHROPIC_API_KEY\" \"CLAUDE_KEY\")))")
+  \\='((openai :pass \"code/openai_api_key\"
+     :env \"OPENAI_API_KEY\")
+    (anthropic :pass \"code/anthropic_key\"
+     :env (\"ANTHROPIC_API_KEY\" \"CLAUDE_KEY\")))")
 
 ;;; Internal helpers
 
